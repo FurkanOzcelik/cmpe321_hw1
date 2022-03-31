@@ -1,0 +1,1 @@
+SELECT Name, Chef, Destination_Name from Restaurant INNER JOIN Destination on  Restaurant.Country_Region = Destination.Destination_ID where Restaurant_ID in (select DISTINCT Favorite_Restaurant from Gourmet)

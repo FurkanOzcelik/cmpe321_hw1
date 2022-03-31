@@ -1,0 +1,1 @@
+select Cuisine_ID, Type, count(Cuisine_Type) as Restaurant_Count, count(Distinct Country_Region) as Distinct_Country_Region_Count from Cuisine INNER join Restaurant on  Cuisine.Cuisine_ID = Restaurant.Cuisine_Type GROUP by Cuisine_Type ORDER By Type asc

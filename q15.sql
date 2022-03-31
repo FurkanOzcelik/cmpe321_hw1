@@ -1,0 +1,1 @@
+select Gourmet_ID, iif(((select count(Restaurant_ID) from Restaurant where Average_Price < Average_Budget and Favorite_Cuisine = Cuisine_Type and Travel_Destination = Country_Region )>0),'TRUE','FALSE') as Feasibility from Gourmet INNER join Restaurant Group by Gourmet_ID

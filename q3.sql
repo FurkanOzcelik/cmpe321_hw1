@@ -1,0 +1,1 @@
+select Restaurant_ID, Name , Chef, Country_Region, Cuisine_Type, Awarded_Since, min(Average_Price) as Average_Price from Restaurant

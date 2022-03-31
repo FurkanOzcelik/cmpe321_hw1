@@ -1,0 +1,1 @@
+SELECT count(*) as Restaurant_Count from restaurant

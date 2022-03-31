@@ -1,0 +1,1 @@
+Select sum(Average_Price) as Total_Price from Restaurant
